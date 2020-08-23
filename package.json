@@ -1,0 +1,43 @@
+{
+  "name": "males-pp",
+  "version": "1.0.0",
+  "description": "Instagram automation tools for paid promote",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Syakhisk/males-pp.git"
+  },
+  "keywords": [
+    "instagram",
+    "paid-promote",
+    "pp",
+    "bot"
+  ],
+  "author": "Syakhisk Al-Azmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Syakhisk/males-pp/issues"
+  },
+  "homepage": "https://github.com/Syakhisk/males-pp#readme",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "chalk": "^4.1.0",
+    "chalk-animation": "^1.6.0",
+    "clamp": "^1.0.1",
+    "clear": "^0.1.0",
+    "delay": "^4.4.0",
+    "dotenv": "^8.2.0",
+    "figlet": "^1.5.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "0.0.1-security",
+    "image-size": "^0.8.3",
+    "inquirer": "^7.3.3",
+    "jimp": "^0.16.0",
+    "moment": "^2.27.0",
+    "tools-for-instagram": "^1.8.11",
+    "util": "^0.12.3"
+  }
+}
