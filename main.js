@@ -11,11 +11,7 @@ const schedule = require("node-schedule");
 // const getFiles = require("./module/getFilesFrom");
 
 app.get("/", (req, res) => {
-  // let run = schedule.scheduleJob("*/1 * * * * *", (fireDate) => {
-  //   res.send(`The program is run at ${fireDate}`);
-  // });
-
-  res.sendfile("index.html");
+  res.sendfile("./src/index.html");
 });
 
 server.listen(port, () => {

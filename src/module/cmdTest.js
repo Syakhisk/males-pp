@@ -1,9 +1,4 @@
-const moment = require("moment");
-const schedule = require("node-schedule");
+var path = require("path");
+var appDir = path.dirname(require.main.filename);
 
-// const pp_all = require("./pp-all");
-// const getFiles = require("./module/getFilesFrom");
-
-schedule.scheduleJob("*/1 * * * * *", function () {
-  console.log(`The program is run at ${"asd"}`);
-});
+console.log(appDir);
