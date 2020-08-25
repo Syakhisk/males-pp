@@ -9,7 +9,7 @@ module.exports = function (config) {
   }
 
   let dirName = config.date + "_" + config.seller;
-  let dirPath = path.join(__dirname, "..", "client", dirName);
+  let dirPath = path.join(__dirname, "..\\..", "client", dirName);
   let configString = JSON.stringify(config, null, "  ");
 
   try {

@@ -17,25 +17,17 @@ const readDirAsync = promisify(fs.readdir);
 
   let igs = [];
 
-  let ig = await login({
-    inputLogin: "ksihkays",
-    inputPassword: "",
-  });
+  for (user of usernames) {
+    console.log(`Iterating cookies...`);
+    let ig = await login({
+      inputLogin: user,
+      inputPassword: "",
+      onlineMode: false,
+    });
 
-  let ig2 = await login({
-    inputLogin: "jeje.cy",
-    inputPassword: "",
-  });
-
-  await getFollowers(ig, "jeje.cy");
-
-  // for (user of usernames) {
-  //   console.log(`Iterating cookies...`);
-  //   let ig = await login({
-  //     inputLogin: user,
-  //     inputPassword: "",
-  //   });
-  // }
+    igs.push(ig);
+  }
 
   console.log("\nProcess done!\n".green);
+  console.log(igs);
 })();

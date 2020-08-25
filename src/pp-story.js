@@ -22,9 +22,9 @@ const init = require("./module/initialize");
   await launchHeader();
 
   /* -- Check IG Credentials -- */
-  await checkInstagramData();
+  // await checkInstagramData();
 
-  let ig = await login();
+  let ig = await login({ inputLogin: "hilalaammar_", inputPassword: "" });
 
   let outputConfig = await createConfig();
   let config = outputConfig[0];
@@ -50,13 +50,17 @@ const init = require("./module/initialize");
 
   /*input file manually by user*/
 
-  let feedsPhotos = await getFilesFrom(path.join(directory, "feeds", "photos"));
-  let feedsVideos = await getFilesFrom(path.join(directory, "feeds", "videos"));
+  let feedsPhotos = await getFilesFrom(
+    path.join(directory, "..", "feeds", "photos")
+  );
+  let feedsVideos = await getFilesFrom(
+    path.join(directory, "..", "feeds", "videos")
+  );
   let storiesPhotos = await getFilesFrom(
-    path.join(directory, "stories", "photos")
+    path.join(directory, "..", "stories", "photos")
   );
   let storiesVideos = await getFilesFrom(
-    path.join(directory, "stories", "videos")
+    path.join(directory, "..", "stories", "videos")
   );
 
   let data = {

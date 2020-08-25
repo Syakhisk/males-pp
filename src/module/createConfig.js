@@ -48,7 +48,8 @@ module.exports = async () => {
   };
 
   async function main() {
-    const dir = path.join(__dirname, "..", "client");
+    const dir = path.join(__dirname, "..\\..", "client");
+
     const choice = await inquirer.prompt(initialQuestion);
     let date = moment().format("DD-M-yyyy");
 
