@@ -8,9 +8,4 @@ const login = require("tools-for-instagram/src/login");
     inputPassword: "",
     onlineMode: false,
   });
-  const ig2 = await login({
-    inputLogin: "ksihkays",
-    inputPassword: "",
-    onlineMode: false,
-  });
 })();

@@ -49,11 +49,6 @@ const init = require("./module/initialize");
   }
 
   /*input file manually by user*/
-
-  console.log("dir:", directory);
-
-  return;
-
   let feedsPhotos = await getFilesFrom(path.join(directory, "feeds", "photos"));
   let feedsVideos = await getFilesFrom(path.join(directory, "feeds", "videos"));
   let storiesPhotos = await getFilesFrom(

@@ -11,7 +11,7 @@ const chalk = require("chalk");
 
 const readFileAsync = promisify(fs.readFile);
 
-module.exports = async (ig = -1, data) => {
+module.exports = async (ig, data) => {
   console.log(
     `\nProcessing storie(s) for ${chalk.magentaBright(
       data.seller
